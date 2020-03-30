@@ -4,18 +4,18 @@ for instance in instances/*.txt; do
 	# actually exists or is just a glob	
 	[ -e "$instance" ] || continue
 	# Plot arm functions
-	echo $"Visualizing instance functions $instance"
+	echo -e $"Visualizing instance functions $instance\n"
 	python3 arm_plotter.py -i $instance
 	# Slow step so check if output file already exists
 	out_name="results/$(basename "$instance" .txt)-out.txt"
 	# echo $out_name	
 	if [ -f $out_name ]; then
-		echo "Results for instance $instance exist, ... skipping simulation"
+		echo -e $"Results for instance $instance exist, ... skipping simulation\n"
 	else
-		echo $"Currently Simulating Policies on $instance"
+		echo -e $"Currently Simulating Policies on $instance"
 		python3 simulate_policies.py -i $instance > $out_name
 	fi	
-	echo $"Plotting Simulation results for $instance"
-	python3 simulate_policies.py -i $out_name
+	echo -e $"Plotting Simulation results for $instance \n"
+	python3 regret_plotter.py -i $out_name
 done
 
