@@ -7,7 +7,7 @@ for instance in instances/*.txt; do
 	echo -e $"Visualizing instance functions $instance\n"
 	python3 instance_plotter.py -i "$instance"
 	# Slow step so check if output file already exists
-	out_name="results/$(basename "$instance" .txt)-out-new.txt"
+	out_name="results/$(basename "$instance" .txt)-out-ucb-cucb.txt"
 	# echo $out_name	
 	if [ -f "$out_name" ]; then
 		echo -e $"Results for instance $instance exist, ... skipping simulation\n"
@@ -18,4 +18,3 @@ for instance in instances/*.txt; do
 	echo -e $"Plotting Simulation results for $instance \n"
 	python3 regret_plotter.py -i "$out_name"
 done
-
