@@ -13,8 +13,8 @@ for instance in instances/*.txt; do
 		echo -e $"Results for instance $instance exist, ... skipping simulation\n"
 	else
 	echo -e $"Currently Simulating Policies on $instance"
-	python3 simulate_policies.py -i "$instance" > "$out_name"
+	python3 simulate_policies.py -i "$instance" -STEP 500 -horizon 1e4 -nruns 500  > "$out_name"
 	fi
 	echo -e $"Plotting Simulation results for $instance \n"
-	python3 regret_plotter.py -i "$out_name"
+	python3 regret_plotter.py -i "$out_name" -STEP 500 -horizon 1e4
 done
