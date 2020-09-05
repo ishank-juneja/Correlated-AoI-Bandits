@@ -15,7 +15,7 @@ for instance in instances/*.txt; do
 	else
 	echo -e $"Currently Simulating Policies on $instance"
 	# Simulate AoI aware as well	
-	python3 simulate_policies.py -i "$instance" -STEP 500 -horizon 1e4 -nruns 2  > "$out_name" --AoI_aware
+	python3 simulate_policies.py -i "$instance" -STEP 100 -horizon 1e4 -nruns 1000 --AoI_aware  > "$out_name"
 	# Simulate only non AoI-aware policies
 	# python3 simulate_policies.py -i "$instance" -STEP 500 -horizon 1e4 -nruns 200  > "$out_name"	
 	fi
