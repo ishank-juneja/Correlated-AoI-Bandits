@@ -2,3 +2,4 @@
 2. Add all the figures and images not just the 2 that have been shared
 3. Complete and add the proof of C-TS for the Beta distribution instead of the Normal distribution
 4. The simulation results will form the bulk of this paper
+5. In the WCNC paper, the upper bounds from the original AoI bandit paper and from this work of correlated bandits was not emphasized. This shiuld be dine in the DDP report since there is no page limit here
