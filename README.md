@@ -1,3 +1,12 @@
-# Readme
+# Correlated Age-of-Information Bandits
 
-The paper refereed to - Multi-Armed Bandits with Correlated Arms - considers general correlated bandit instances with rewards bounded in the range [0, B], B \in Reals. However in this work on correlated bandit instances, only bandit instances with 0-1 rewards are considered. This means that the usual, or more standard version of MAB algorithms can be used.
+This repository is the authors' implementation of [the paper](home.iitb.ac.in/~ishankjuneja/files/1570682101.pdf) Correlated Age-of-Information Bandits. 
+
+### Usage Instructions
+
+Coming Soon ...
+
+### Related
+
+- A New Approach to Correlated Multi-Armed Bandits [repository](https://github.com/ishank-juneja/UCUCB)
+
