@@ -6,7 +6,7 @@
 <b>A regret plot example for an instance where UCUCB outperformed CUCB</b>
 </p>
 
-This repository is the authors' implementation of [the paper](home.iitb.ac.in/~ishankjuneja/files/1570682101.pdf) Correlated Age-of-Information Bandits. 
+This repository is the authors' implementation of [the paper](https://arxiv.org/abs/2011.05032) Correlated Age-of-Information Bandits. 
 
 ### Usage Instructions
 
