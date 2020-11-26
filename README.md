@@ -1,7 +1,7 @@
 # Correlated Age-of-Information Bandits
 
 <p align="center">
-  <img src="media/system.png" width="400"/>
+  <img src="media/system1.png" width="400"/>
   <br>
 <b>A regret plot example for an instance where UCUCB outperformed CUCB</b>
 </p>
